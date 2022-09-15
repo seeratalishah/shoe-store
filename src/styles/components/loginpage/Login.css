@@ -1,4 +1,35 @@
 .login{
     background-color: var(--tertiary-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-logins{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-login{
+    display: flex;
+    gap: 1rem;
     padding: 1rem;
+    border-radius: 4px;
+    background-color: var(--text-color);
+    color: black;
+    width: 100%;
+}
+
+.or{
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.or hr{
+    width: 100%;
 }

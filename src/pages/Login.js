@@ -1,20 +1,21 @@
 import React from 'react'
 
 function Login() {
+
   return (
     <div className="container">
         <form className='login'>
         <h2>Login</h2>
         <div className="social-logins">
-            <div className="facebook">
+            <div className="facebook social-login">
                 <i class="fa-brands fa-square-facebook"></i>
                 <span>Login with Facebook</span>
             </div>
-            <div className="apple">
+            <div className="apple social-login">
                 <i class="fa-brands fa-apple"></i>
                 <span>Login with Apple</span>
             </div>
-            <div className="google">
+            <div className="google social-login">
                 <i class="fa-brands fa-google"></i>
                 <span>Login with Google</span>
             </div>
