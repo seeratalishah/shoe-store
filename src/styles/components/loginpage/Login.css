@@ -1,9 +1,13 @@
 .login{
-    background-color: var(--tertiary-color);
+    background-color: #023439;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.login h2{
+    text-align: center;
 }
 
 .social-logins{
@@ -63,4 +67,8 @@
 .login .input-container input:focus{
     border: none;
     outline: 2px solid var(--primary-color);
+}
+
+.login .login-btn{
+    background-color: var(--primary-color);
 }
