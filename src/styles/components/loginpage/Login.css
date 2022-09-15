@@ -1,9 +1,17 @@
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .login{
-    background-color: #023439;
+    background-color: #012850;
+    border-radius: 4px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
+    max-width: 400px;
 }
 
 .login h2{
@@ -20,12 +28,26 @@
 .social-login{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     padding: 0.7rem;
     border-radius: 4px;
     background-color: var(--text-color);
     color: black;
     width: 100%;
+}
+
+.facebook i{
+    color: #3838f0;
+    font-size: 1.2rem;
+}
+
+.apple i{
+    font-size: 1.2rem;
+}
+
+.google i{
+    color: #0a940a;
 }
 
 .social-login span{
@@ -70,5 +92,17 @@
 }
 
 .login .login-btn{
-    background-color: var(--primary-color);
+    background-color: #fb462e;
+    padding: 0.5rem 0;
+    width: 40%;
+    border-radius: 3px;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: 0.5s all ease-out;
+}
+
+.login .login-btn:hover{
+    background-color: #f52408;
+    letter-spacing: 1px;
 }

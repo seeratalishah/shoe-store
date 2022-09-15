@@ -3,12 +3,12 @@ import React from 'react'
 function Login() {
 
   return (
-    <div className="container">
+    <div className="container main-container">
         <form className='login'>
         <h2>Login</h2>
         <div className="social-logins">
             <div className="facebook social-login">
-                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-facebook-f"></i>
                 <span>Login with Facebook</span>
             </div>
             <div className="apple social-login">

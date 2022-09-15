@@ -65,17 +65,23 @@ function App() {
   
   return (
     <div className="App">
+    
       <Navbar state={state} />
       <Routes>
+     
+        <Route path='/login' element={<Login />} ></Route>
+
         <Route path="/" element={<Homepage state={state} dispatch={dispatch} />}></Route>
         <Route path="/product/:id" element={<ProductPage state={state} dispatch={dispatch} />} ></Route>
         <Route path="/cart" element={<CartPage state={state} dispatch={dispatch} />} ></Route>
         <Route path="/order" element={<OrderPage />} ></Route>
-        <Route path='/login' element={<Login />} ></Route>
+        
 
         {/* Example Route */}
         <Route path="/reducer" element={<ReducerPage />}></Route>
       </Routes>
+
+      
     </div>
   );
 }
