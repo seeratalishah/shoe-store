@@ -60,6 +60,7 @@ const cartReducer = (state, action) => {
 
 function App() {
   const [state, dispatch] = useReducer(cartReducer, initialState);
+  const [isLoggedIn, setIsLoggedIn] = (false);
   
   return (
     <div className="App">
