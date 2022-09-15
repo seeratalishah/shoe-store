@@ -7,6 +7,10 @@ function Navbar({ state }) {
     navigate('/cart');
   };
 
+  const navigateToLoginPage = ()=>{
+    navigate('/login');
+  }
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -19,6 +23,7 @@ function Navbar({ state }) {
         </div>
         
         <div className="right-container">
+          <button className='login-btn' onClick={navigateToLoginPage} >Login</button>
           <button onClick={goToCartPage} className="cart-button">
             <span className="material-icons-outlined">
               add_shopping_cart

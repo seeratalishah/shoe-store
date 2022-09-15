@@ -57,3 +57,5 @@ input[type=number] {
 @import './styles/components/cartpage/index.css';
 
 @import './styles/components/common/BackLink.css';
+
+@import './styles/components/loginpage/Login.css';
