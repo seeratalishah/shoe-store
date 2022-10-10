@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-function Navbar({ state }) {
+function Navbar({ state}) {
   const navigate = useNavigate();
 
   const goToCartPage = () => {
@@ -8,7 +8,7 @@ function Navbar({ state }) {
   };
 
   const navigateToLoginPage = ()=>{
-    navigate('/login');
+      navigate('/login'); 
   }
 
   return (

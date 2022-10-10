@@ -2,6 +2,7 @@ import React from 'react'
 
 function Login() {
 
+
   return (
     <div className="container main-container">
         <form className='login'>
@@ -32,10 +33,13 @@ function Login() {
             </div>
             <div className="input-container">
                 <label htmlFor="password">Password</label>
-                <input type="password" id='password' placeholder='Password here' required />
+                <input type="password" id='password' placeholder='Password here'  required />
             </div>
         </div>
-        <button className='login-btn' type='submit' >Login</button>
+        <button className='login-btn' >Login</button>
+        {
+            error? <p>Incorrect email or password</p> : null
+        }
     </form>
     </div>
   )

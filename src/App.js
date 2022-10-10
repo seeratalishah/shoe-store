@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar';
 
@@ -7,8 +7,10 @@ import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
 import OrderPage from './pages/OrderPage';
 import ReducerPage from './pages/ReducerPage';
-import { useReducer } from 'react';
+import { useReducer} from 'react';
 import Login from './pages/Login';
+
+
 
 // Define Initial State
 const initialState = {
@@ -60,8 +62,9 @@ const cartReducer = (state, action) => {
 };
 
 function App() {
+
   const [state, dispatch] = useReducer(cartReducer, initialState);
-  // const [isLoggedIn, setIsLoggedIn] = (false);
+
   
   return (
     <div className="App">
@@ -69,12 +72,11 @@ function App() {
       <Navbar state={state} />
       <Routes>
      
-        <Route path='/login' element={<Login />} ></Route>
-
         <Route path="/" element={<Homepage state={state} dispatch={dispatch} />}></Route>
         <Route path="/product/:id" element={<ProductPage state={state} dispatch={dispatch} />} ></Route>
         <Route path="/cart" element={<CartPage state={state} dispatch={dispatch} />} ></Route>
         <Route path="/order" element={<OrderPage />} ></Route>
+        {/* <Route path='/login' element={<Login/>} ></Route> */}
         
 
         {/* Example Route */}
