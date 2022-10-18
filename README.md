@@ -1,6 +1,6 @@
 # Shoe Store Project
 
-An Ecommerce Store using  react js hook useReducer, Form steps changes according to the active state.
+An E commerce Store using  react js hook useReducer, With basic functionalities of an e commerce store.
 
 <div>
  <h2>
